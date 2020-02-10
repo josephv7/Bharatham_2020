@@ -7,7 +7,7 @@
     android:id="@+id/rootView"
 
     app:layout_behavior="@string/appbar_scrolling_view_behavior"
-    tools:context="com.roundmelon.iamjosephvarghese.bharatham_2k18.Schedule"
+    tools:context="com.iamjosephvarghese.bharatham2020.Schedule"
 
     android:background="#bababa">
 

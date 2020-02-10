@@ -4,7 +4,7 @@ apply plugin: 'com.google.gms.google-services'
 android {
     compileSdkVersion 27
     defaultConfig {
-        applicationId "com.roundmelon.iamjosephvarghese.bharatham_2k18"
+        applicationId "com.iamjosephvarghese.bharatham2020"
         minSdkVersion 19
         targetSdkVersion 27
         versionCode 6
