@@ -199,7 +199,7 @@ public class MainActivity extends AppCompatActivity
                 startActivity(likeIng);
             } catch (ActivityNotFoundException e) {
                 startActivity(new Intent(Intent.ACTION_VIEW,
-                        Uri.parse("http://instagram.com/bharatham2k18?hl=en")));
+                        Uri.parse("http://instagram.com/bharatham2020?hl=en")));
             }
 
         } else if (id == R.id.website) {
