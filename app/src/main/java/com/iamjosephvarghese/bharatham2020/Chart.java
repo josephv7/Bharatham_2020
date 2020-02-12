@@ -172,7 +172,7 @@ public class Chart extends AppCompatActivity {
 
 
         BarDataSet barDataSet1 = new BarDataSet(valueSet1, "Aghoras");
-        barDataSet1.setColor(Color.rgb(153,51,51));
+        barDataSet1.setColor(Color.rgb(163,0,169));
         BarDataSet barDataSet2 = new BarDataSet(valueSet2, "Aryans");
         barDataSet2.setColor(Color.rgb(255,204,0));
         BarDataSet barDataSet3 = new BarDataSet(valueSet3, "Mughals");
@@ -182,7 +182,7 @@ public class Chart extends AppCompatActivity {
         BarDataSet barDataSet5 = new BarDataSet(valueSet5, "Spartans");
         barDataSet5.setColor(Color.rgb(102,204,51));
         BarDataSet barDataSet6 = new BarDataSet(valueSet6, "Vikings");
-        barDataSet6.setColor(Color.rgb(2,43,123));
+        barDataSet6.setColor(Color.rgb(254,16,16));
 
 
 
