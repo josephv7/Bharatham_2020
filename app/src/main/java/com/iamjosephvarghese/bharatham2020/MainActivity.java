@@ -62,7 +62,7 @@ public class MainActivity extends AppCompatActivity
             @Override
             public void onClick(View v) {
                 startActivity(new Intent(Intent.ACTION_VIEW,
-                        Uri.parse("https://bharatham2k18.in")));
+                        Uri.parse("https://bharatham2020.in")));
             }
         });
 
