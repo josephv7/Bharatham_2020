@@ -111,8 +111,9 @@ public class MainActivity extends AppCompatActivity
         video.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(MainActivity.this, Youtube.class);
-                startActivity(intent);
+//                TODO handle youtube error
+//                Intent intent = new Intent(MainActivity.this, Youtube.class);
+//                startActivity(intent);
             }
         });
 

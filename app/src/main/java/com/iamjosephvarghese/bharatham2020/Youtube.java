@@ -2,6 +2,7 @@ package com.iamjosephvarghese.bharatham2020;
 
 import android.content.pm.ActivityInfo;
 import android.os.Bundle;
+import android.view.WindowManager;
 
 import com.google.android.youtube.player.YouTubeBaseActivity;
 import com.google.android.youtube.player.YouTubeInitializationResult;
@@ -12,7 +13,7 @@ import com.iamjosephvarghese.bharatham2020.R;
 public class Youtube extends YouTubeBaseActivity
         implements YouTubePlayer.OnInitializedListener {
 
-    private String GOOGLE_API_KEY = "AIzaSyAdHUqrjdsE0u29u3bFWaMOxXKWk-tX6mk";
+    private String GOOGLE_API_KEY = "AIzaSyCTkzOzDdOn1vBbnVvLcf9WYuiypjtFO08";
 
 
 
@@ -23,6 +24,8 @@ public class Youtube extends YouTubeBaseActivity
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_youtube);
         setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_LANDSCAPE);
+
+        getWindow().addFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN);
 
         YOUTUBE_VIDEO_ID = "LtBM_HZc3ro";
 
