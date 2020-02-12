@@ -23,8 +23,8 @@ public class Schedule extends AppCompatActivity {
         tabLayout.addTab(tabLayout.newTab().setText("PAREEKSHA BHAVAN H4"));
         tabLayout.addTab(tabLayout.newTab().setText("PAREEKSHA BHAVAN H5"));
         tabLayout.addTab(tabLayout.newTab().setText("OPEN STAGE"));
-        tabLayout.addTab(tabLayout.newTab().setText("LECTURE HALL"));
-        tabLayout.addTab(tabLayout.newTab().setText("LECTURE HALL"));
+        tabLayout.addTab(tabLayout.newTab().setText("LECTURE HALL 1"));
+        tabLayout.addTab(tabLayout.newTab().setText("LECTURE HALL 2"));
         tabLayout.addTab(tabLayout.newTab().setText("MULTIMEDIA HALL"));
         tabLayout.setTabGravity(TabLayout.GRAVITY_CENTER);
 
