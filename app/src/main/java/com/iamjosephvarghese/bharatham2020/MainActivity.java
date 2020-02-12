@@ -16,10 +16,12 @@ import android.widget.LinearLayout;
 import android.widget.Toast;
 
 import com.iamjosephvarghese.bharatham2020.R;
+
 public class MainActivity extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener {
 
-    LinearLayout video,liveScore,gallery,updates,selfie,selfie_gallery,website_home,events;
+    LinearLayout video, liveScore, gallery, updates, website_home, events;
+    LinearLayout selfie, selfie_gallery;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -27,8 +29,6 @@ public class MainActivity extends AppCompatActivity
         setContentView(R.layout.activity_main);
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
-
-
 
 
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
@@ -45,8 +45,8 @@ public class MainActivity extends AppCompatActivity
         liveScore = findViewById(R.id.drawable_live_scores);
         gallery = findViewById(R.id.drawable_gallery);
         updates = findViewById(R.id.drawable_updates);
-        selfie = findViewById(R.id.drawable_selfie);
-        selfie_gallery = findViewById(R.id.drawable__selfie_gallery);
+//        selfie = findViewById(R.id.drawable_website1);
+//        selfie_gallery = findViewById(R.id.drawable__selfie_gallery);
         website_home = findViewById(R.id.drawable_website);
         events = findViewById(R.id.drawable_events);
 
@@ -66,21 +66,21 @@ public class MainActivity extends AppCompatActivity
             }
         });
 
-        selfie_gallery.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent intent = new Intent(MainActivity.this, SelfieGallery.class);
-                startActivity(intent);
-            }
-        });
-
-        selfie.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent intent = new Intent(MainActivity.this, Home.class);
-                startActivity(intent);
-            }
-        });
+//        selfie_gallery.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View v) {
+//                Intent intent = new Intent(MainActivity.this, SelfieGallery.class);
+//                startActivity(intent);
+//            }
+//        });
+//
+//        selfie.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View v) {
+//                Intent intent = new Intent(MainActivity.this, Home.class);
+//                startActivity(intent);
+//            }
+//        });
 
 
         updates.setOnClickListener(new View.OnClickListener() {
@@ -117,7 +117,6 @@ public class MainActivity extends AppCompatActivity
         });
 
     }
-
 
 
     @Override
@@ -178,7 +177,7 @@ public class MainActivity extends AppCompatActivity
             sendIntent.setType("text/plain");
             startActivity(sendIntent);
 
-        }else if (id == R.id.fb) {
+        } else if (id == R.id.fb) {
 
             try {
                 Intent intent = new Intent(Intent.ACTION_VIEW, Uri.parse("fb://page/169929660582298"));
@@ -187,7 +186,7 @@ public class MainActivity extends AppCompatActivity
                 startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse("https://www.facebook.com/bharatham2k18/")));
             }
 
-        }else if (id == R.id.insta) {
+        } else if (id == R.id.insta) {
 
             Uri uri = Uri.parse("http://instagram.com/_u/bharatham2k18");
             Intent likeIng = new Intent(Intent.ACTION_VIEW, uri);
@@ -201,13 +200,13 @@ public class MainActivity extends AppCompatActivity
                         Uri.parse("http://instagram.com/bharatham2k18?hl=en")));
             }
 
-        }else if(id == R.id.website){
+        } else if (id == R.id.website) {
             startActivity(new Intent(Intent.ACTION_VIEW,
                     Uri.parse("https://bharatham2k18.in")));
-        }else if(id == R.id.youtube){
+        } else if (id == R.id.youtube) {
             String url = "https://www.youtube.com/channel/UCvKw6jTBXaNfxsF3iHA1LMw";
             try {
-                Intent intent =new Intent(Intent.ACTION_VIEW);
+                Intent intent = new Intent(Intent.ACTION_VIEW);
                 intent.setPackage("com.google.android.youtube");
                 intent.setData(Uri.parse(url));
                 startActivity(intent);
@@ -224,6 +223,6 @@ public class MainActivity extends AppCompatActivity
     }
 
     public void UnderWork(View v) {
-        Toast.makeText(this,"Coming Soon!",Toast.LENGTH_LONG).show();
+        Toast.makeText(this, "Coming Soon!", Toast.LENGTH_LONG).show();
     }
 }
