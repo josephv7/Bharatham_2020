@@ -199,7 +199,7 @@ public class MainActivity extends AppCompatActivity
 //        }
         else if (id == R.id.insta) {
 
-            Uri uri = Uri.parse("http://instagram.com/_u/bharatham2k18");
+            Uri uri = Uri.parse("http://instagram.com/_u/bharatham2020");
             Intent likeIng = new Intent(Intent.ACTION_VIEW, uri);
 
             likeIng.setPackage("com.instagram.android");
