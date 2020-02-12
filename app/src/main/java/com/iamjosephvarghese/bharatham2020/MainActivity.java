@@ -177,16 +177,18 @@ public class MainActivity extends AppCompatActivity
             sendIntent.setType("text/plain");
             startActivity(sendIntent);
 
-        } else if (id == R.id.fb) {
+        }
+//        else if (id == R.id.fb) {
+//
+//            try {
+//                Intent intent = new Intent(Intent.ACTION_VIEW, Uri.parse("fb://page/169929660582298"));
+//                startActivity(intent);
+//            } catch (Exception e) {
+//                startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse("https://www.facebook.com/bharatham2k18/")));
+//            }
 
-            try {
-                Intent intent = new Intent(Intent.ACTION_VIEW, Uri.parse("fb://page/169929660582298"));
-                startActivity(intent);
-            } catch (Exception e) {
-                startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse("https://www.facebook.com/bharatham2k18/")));
-            }
-
-        } else if (id == R.id.insta) {
+//        }
+        else if (id == R.id.insta) {
 
             Uri uri = Uri.parse("http://instagram.com/_u/bharatham2k18");
             Intent likeIng = new Intent(Intent.ACTION_VIEW, uri);
@@ -202,20 +204,21 @@ public class MainActivity extends AppCompatActivity
 
         } else if (id == R.id.website) {
             startActivity(new Intent(Intent.ACTION_VIEW,
-                    Uri.parse("https://bharatham2k18.in")));
-        } else if (id == R.id.youtube) {
-            String url = "https://www.youtube.com/channel/UCvKw6jTBXaNfxsF3iHA1LMw";
-            try {
-                Intent intent = new Intent(Intent.ACTION_VIEW);
-                intent.setPackage("com.google.android.youtube");
-                intent.setData(Uri.parse(url));
-                startActivity(intent);
-            } catch (ActivityNotFoundException e) {
-                Intent intent = new Intent(Intent.ACTION_VIEW);
-                intent.setData(Uri.parse(url));
-                startActivity(intent);
-            }
+                    Uri.parse("https://bharatham2020.in")));
         }
+//        else if (id == R.id.youtube) {
+//            String url = "https://www.youtube.com/channel/UCvKw6jTBXaNfxsF3iHA1LMw";
+//            try {
+//                Intent intent = new Intent(Intent.ACTION_VIEW);
+//                intent.setPackage("com.google.android.youtube");
+//                intent.setData(Uri.parse(url));
+//                startActivity(intent);
+//            } catch (ActivityNotFoundException e) {
+//                Intent intent = new Intent(Intent.ACTION_VIEW);
+//                intent.setData(Uri.parse(url));
+//                startActivity(intent);
+//            }
+//        }
 
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
         drawer.closeDrawer(GravityCompat.START);

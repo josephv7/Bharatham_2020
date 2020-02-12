@@ -24,18 +24,18 @@
         android:checkableBehavior="single">
         <item android:title="Our Social Handles">
             <menu>
-                <item
-                    android:id="@+id/fb"
-                    android:icon="@drawable/ic_facebook"
-                    android:title="Facebook" />
+<!--                <item-->
+<!--                    android:id="@+id/fb"-->
+<!--                    android:icon="@drawable/ic_facebook"-->
+<!--                    android:title="Facebook" />-->
                 <item
                     android:id="@+id/insta"
                     android:icon="@drawable/ic_instagram"
                     android:title="Instagram" />
-                <item
-                    android:id="@+id/youtube"
-                    android:icon="@drawable/ic_videos"
-                    android:title="YouTube" />
+<!--                <item-->
+<!--                    android:id="@+id/youtube"-->
+<!--                    android:icon="@drawable/ic_videos"-->
+<!--                    android:title="YouTube" />-->
                 <item
                     android:id="@+id/website"
                     android:icon="@drawable/ic_globe"
