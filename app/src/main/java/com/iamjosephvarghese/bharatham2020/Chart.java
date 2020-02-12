@@ -172,15 +172,15 @@ public class Chart extends AppCompatActivity {
 
 
         BarDataSet barDataSet1 = new BarDataSet(valueSet1, "Aghoras");
-        barDataSet1.setColor(Color.rgb(124,62,146));
+        barDataSet1.setColor(Color.rgb(153,51,51));
         BarDataSet barDataSet2 = new BarDataSet(valueSet2, "Aryans");
-        barDataSet2.setColor(Color.rgb(251,189,10));
+        barDataSet2.setColor(Color.rgb(255,204,0));
         BarDataSet barDataSet3 = new BarDataSet(valueSet3, "Mughals");
-        barDataSet3.setColor(Color.rgb(237,2,47));
+        barDataSet3.setColor(Color.rgb(0,0,153));
         BarDataSet barDataSet4 = new BarDataSet(valueSet4, "Rajputs");
-        barDataSet4.setColor(Color.rgb(253,106,4));
+        barDataSet4.setColor(Color.rgb(255,102,0));
         BarDataSet barDataSet5 = new BarDataSet(valueSet5, "Spartans");
-        barDataSet5.setColor(Color.rgb(237,72,183));
+        barDataSet5.setColor(Color.rgb(102,204,51));
         BarDataSet barDataSet6 = new BarDataSet(valueSet6, "Vikings");
         barDataSet6.setColor(Color.rgb(2,43,123));
 
