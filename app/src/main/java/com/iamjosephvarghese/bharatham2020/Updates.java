@@ -21,12 +21,85 @@ import java.util.List;
 import java.util.Map;
 
 public class Updates extends AppCompatActivity {
-    
+
 //    final String[] item_upload = new String[]{"LIGHT_MUSIC_VOCAL_MALE","LIGHT_MUSIC_VOCAL_FEMALE","HINDUSTANI_CLASSICAL_MUSIC","CARNATIC_CLASSICAL_MUSIC","WESTERN_VOCAL_SOLO","MAPPILAPATT","INSTRUMENTAL_MUSIC_STRINGS","INSTRUMENTAL_MUSIC_KEYBOARD","INSTRUMENTAL_MUSIC_PERCUSSION","INSTRUMENTAL_MUSIC_WIND","KADHAPRASANGAM","MONOACT","MIMICRY","FANCY_DRESS","BHARATHANATYAM","MOHINIYATTOM","FOLK_DANCE","ADAPT_TUNE","MOCK_PRESS","ELOCUTION_MALAYALAM","ELOCUTION_ENGLISH","RECITATION_MALAYALAM","RECITATION_ENGLISH","EXTEMPORE_MALAYALAM","EXTEMPORE_ENGLISH","TURN_AROUND","AKSHARASLOGAM","MANGLISH","PHOTOGRAPHY","ON_THE_SPOT_PAINTING","JAM"};
 
 
-    final String[] items_group = new String[]{"PAPER_COLLAGE","PENCIL_DRAWING","POSTER_DESIGNING","ESSAY_WRITING_MALAYALAM","ESSAY_WRITING_ENGLISH","SHORT_STORY_WRITING_MALAYALAM","SHORT_STORY_WRITING_ENGLISH","POETRY_WRITING_MALAYALAM","POETRY_WRITING_ENGLISH","FILM_REVIEW_WRITING","TRAVELOGUE","MEME_MAKING","COMICS_STRIP","CARICATURE","THEME_SHOW","DECO","AD_ON","NADAN_PATTU","BAND_OF_BRAHMAS","BATTLE_OF_BANDS","GROUP_SONG_EASTERN","OLD_MELODY_SONG_DUET","NOSTALGIA_GIRLS","THEMATIC_DANCE_GIRLS","PROP_DANCE_BOYS","MIME","THIRUVATHIRA","MARGAM_KALI","VATTAPATTU","SYNCHRONIZATION","DEBATE_MALAYLAM","DEBATE_ENGLISH","QUIZ","DRAMA","TABLEAU","MOVIE_SCENE_DUBBING"," SHORTFILM","MEHANDI_COMPETITION","TREASURE_FROM_TRASH","FACE_PAINTING","WALL_ART","LIGHT_MUSIC_VOCAL_MALE","LIGHT_MUSIC_VOCAL_FEMALE","HINDUSTANI_CLASSICAL_MUSIC","CARNATIC_CLASSICAL_MUSIC","WESTERN_VOCAL_SOLO","MAPPILAPATT","INSTRUMENTAL_MUSIC_STRINGS","INSTRUMENTAL_MUSIC_KEYBOARD","INSTRUMENTAL_MUSIC_PERCUSSION","INSTRUMENTAL_MUSIC_WIND","KADHAPRASANGAM","MONOACT","MIMICRY","FANCY_DRESS","BHARATHANATYAM","MOHINIYATTOM","FOLK_DANCE","ADAPT_TUNE","MOCK_PRESS","ELOCUTION_MALAYALAM","ELOCUTION_ENGLISH","RECITATION_MALAYALAM","RECITATION_ENGLISH","EXTEMPORE_MALAYALAM","EXTEMPORE_ENGLISH","TURN_AROUND","AKSHARASLOGAM","MANGLISH","PHOTOGRAPHY","ON_THE_SPOT_PAINTING","JAM"};
-
+    final String[] items_group = new String[]{"A_TALE_OF_TWO",
+            "ADAPT_TUNE",
+            "AKSHARASLOGAM",
+            "BAND_OF_BRAHMAS",
+            "BATTLE_OF_BANDS",
+            "BHARATHANATYAM",
+            "CARICATURE",
+            "CARNATIC_CLASSICAL_MUSIC",
+            "COMICS_STRIP",
+            "DEBATE_ENGLISH",
+            "DEBATE_MALAYLAM",
+            "DECO_NO_REGISTRATION",
+            "DRAMA",
+            "ELOCUTION_ENGLISH",
+            "ELOCUTION_MALAYALAM",
+            "ESSAY_WRITING_ENGLISH",
+            "ESSAY_WRITING_MALAYALAM",
+            "EVENT_LIST",
+            "EXTEMPORE_ENGLISH",
+            "EXTEMPORE_MALAYALAM",
+            "FACE_PAINTING",
+            "FANCY_DRESS",
+            "FILM_REVIEW_WRITING",
+            "FOLK_DANCE",
+            "GRAFFITTI",
+            "GROUP_EVENTS",
+            "GROUP_SONG_EASTERN",
+            "HINDUSTANI_CLASSICAL_MUSIC",
+            "HUMKAR",
+            "INDIVIDUAL_EVENTS",
+            "INSTRUMENTAL_MUSIC_KEYBOARD",
+            "INSTRUMENTAL_MUSIC_PERCUSSION",
+            "INSTRUMENTAL_MUSIC_STRINGS",
+            "INSTRUMENTAL_MUSIC_WIND",
+            "JAM",
+            "JAM_SKETCH",
+            "KADHAPRASANGAM",
+            "LIGHT_MUSIC_VOCAL_FEMALE",
+            "LIGHT_MUSIC_VOCAL_MALE",
+            "LITERARY_EVENTS_WRITTEN",
+            "MANGLISH",
+            "MAPPILAPATT",
+            "MARGAM_KALI",
+            "MEME_MAKING",
+            "MIME",
+            "MIMICRY",
+            "MOCK_PRESS",
+            "MOHINIYATTOM",
+            "MONOACT",
+            "MOVIE_SCENE_DUBBING",
+            "NADAN_PATTU",
+            "NOSTALGIA_GIRLS",
+            "OLD_MELODY_SONG_DUET_",
+            "ON_THE_SPOT_PAINTING",
+            "PAPER_COLLAGE",
+            "PENCIL_DRAWING",
+            "PHOTOGRAPHY",
+            "POETRY_WRITING_ENGLISH",
+            "POETRY_WRITING_MALAYALAM",
+            "POSTER_DESIGNING",
+            "PROP_DANCE_BOYS",
+            "QUIZ",
+            "RECITATION_ENGLISH",
+            "RECITATION_MALAYALAM",
+            "SHORT_STORY_WRITING_ENGLISH",
+            "SHORT_STORY_WRITING_MALAYALAM",
+            "SHORTFILM_NO_REGISTRATION",
+            "SYNCHRONIZATION",
+            "THEMATIC_DANCE_GIRLS",
+            "THEME_SHOW",
+            "THIRUVATHIRA",
+            "TRAVELOGUE",
+            "TURN_AROUND",
+            "VATTAPATTU",
+            "WESTERN_VOCAL_SOLO"};
     int i = 0;
     int j = 0;
     int k = 0;
@@ -38,9 +111,9 @@ public class Updates extends AppCompatActivity {
     int[] secondNo = new int[100];
     int[] thirdNo = new int[100];
 
-    String fname,fhouse,fscore,feventName,fposition,fclassName,fuploader;
-    String fname2,fhouse2,fscore2,feventName2,fposition2,fclassName2,fuploader2;
-    String fname3,fhouse3,fscore3,feventName3,fposition3,fclassName3,fuploader3;
+    String fname, fhouse, fscore, feventName, fposition, fclassName, fuploader;
+    String fname2, fhouse2, fscore2, feventName2, fposition2, fclassName2, fuploader2;
+    String fname3, fhouse3, fscore3, feventName3, fposition3, fclassName3, fuploader3;
 
     private DatabaseReference mDatabase;
     private List<Details> details_array1;
@@ -61,7 +134,6 @@ public class Updates extends AppCompatActivity {
     FirebaseDatabase database;
 
 
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -78,7 +150,7 @@ public class Updates extends AppCompatActivity {
 
         pDialog = new ProgressDialog(this);
 
-        Log.d("started",".......");
+        Log.d("started", ".......");
 
         database = FirebaseDatabase.getInstance();
         DatabaseReference final_ref = database.getReference("main/final");
@@ -95,19 +167,18 @@ public class Updates extends AppCompatActivity {
 //            }
 //        });
 
-//        for(int i=0;i< item_upload.length;i++){
-//            final_ref.child(item_upload[i]).setValue("0");
+
+//        for(int i=0;i< items_group.length;i++){
+//            final_ref.child(items_group[i]).setValue("0");
 //        }
 
 
-        bebas = Typeface.createFromAsset(getResources().getAssets(),  "fonts/bebasneue.ttf");
-
+        bebas = Typeface.createFromAsset(getResources().getAssets(), "fonts/bebasneue.ttf");
 
 
         pDialog.setMessage("Updating Scores...");
         pDialog.setCancelable(false);
         pDialog.show();
-
 
 
         final_ref.addValueEventListener(new ValueEventListener() {
@@ -116,17 +187,18 @@ public class Updates extends AppCompatActivity {
                 //for here/////////////////////////////////////////////////////////
 //                Map<String,String> map = (Map) dataSnapshot.getValue(Map.class);
 
-                GenericTypeIndicator<Map<String, String>> genericTypeIndicator = new GenericTypeIndicator<Map<String, String>>() {};
-                Map<String, String> map = dataSnapshot.getValue(genericTypeIndicator );
+                GenericTypeIndicator<Map<String, String>> genericTypeIndicator = new GenericTypeIndicator<Map<String, String>>() {
+                };
+                Map<String, String> map = dataSnapshot.getValue(genericTypeIndicator);
 
 //                pDialog.setMessage("Updating Scores...");
 //                pDialog.setCancelable(false);
 //                pDialog.show();
 
 
-                Log.d("here","-----");
-                Log.d("No. of events",Integer.toString(items_group.length));
-                for(i=0;i<=items_group.length-1;i++) {
+                Log.d("here", "-----");
+                Log.d("No. of events", Integer.toString(items_group.length));
+                for (i = 0; i <= items_group.length - 1; i++) {
 
 
                     final_status[i] = Integer.parseInt(map.get(items_group[i]));
@@ -151,12 +223,10 @@ public class Updates extends AppCompatActivity {
     }
 
 
-
-    public void trigger(){
-
+    public void trigger() {
 
 
-        Log.d("trigger",".........");
+        Log.d("trigger", ".........");
 
         details_array1 = new ArrayList<Details>();
         details_array2 = new ArrayList<Details>();
@@ -172,19 +242,19 @@ public class Updates extends AppCompatActivity {
             @Override
             public void onDataChange(DataSnapshot dataSnapshot) {
 
-                Log.d("trigger data change",".........");
+                Log.d("trigger data change", ".........");
 
-                for(j=0;j<=items_group.length-1;j++) {
+                for (j = 0; j <= items_group.length - 1; j++) {
                     if (final_status[j] == 1) {
 
-                        Log.d("trigger for",".........");
+                        Log.d("trigger for", ".........");
                         //dismissing the progress dialog
                         Log.d("Events", dataSnapshot.child(items_group[j]).getChildrenCount() + "");
                         //progressDialog.dismiss();
 
-                        if(dataSnapshot.child(items_group[j]).child("first").getChildrenCount() > 1) {
+                        if (dataSnapshot.child(items_group[j]).child("first").getChildrenCount() > 1) {
                             for (DataSnapshot postSnapshot : dataSnapshot.child(items_group[j]).child("first").getChildren()) {
-                                if(fname == null){
+                                if (fname == null) {
                                     fname = postSnapshot.child("name").getValue().toString();
                                     fscore = postSnapshot.child("score").getValue().toString();
                                     feventName = postSnapshot.child("eventName").getValue().toString();
@@ -192,19 +262,19 @@ public class Updates extends AppCompatActivity {
                                     fuploader = postSnapshot.child("uploader").getValue().toString();
                                     fhouse = postSnapshot.child("house").getValue().toString();
                                     fposition = postSnapshot.child("position").getValue().toString();
-                                }else{
+                                } else {
                                     fname += ", " + postSnapshot.child("name").getValue().toString();
                                     fhouse += ", " + postSnapshot.child("house").getValue().toString();
                                 }
                             }
 
-                            Details details1 = new Details(fname,fclassName,fhouse,fscore,feventName,fposition,fuploader);
+                            Details details1 = new Details(fname, fclassName, fhouse, fscore, feventName, fposition, fuploader);
                             details_array1.add(details1);
 //                            fname = null;
-                        }else {
+                        } else {
                             for (DataSnapshot postSnapshot : dataSnapshot.child(items_group[j]).child("first").getChildren()) {
                                 ///gettinng no of first no
-                                Log.d("first data change",".........");
+                                Log.d("first data change", ".........");
 
 //                            for(DataSnapshot subSnapshot : postSnapshot)
                                 firstNo[j] = (int) postSnapshot.getChildrenCount();
@@ -235,7 +305,7 @@ public class Updates extends AppCompatActivity {
                                 //Image image = new Image();
                                 details_array1.add(details1);
 //                            name1.add(details1.getName());
-                                Log.d("name",details1.getName());
+                                Log.d("name", details1.getName());
 //                            eventName1.add(details1.getEventName());
 //                            className1.add(details1.getClassName());
 //                            house1.add(details1.getHouse());
@@ -247,9 +317,7 @@ public class Updates extends AppCompatActivity {
                             }
 
 
-
                             //iterating through all the values in database
-
 
 
                         }
@@ -257,29 +325,29 @@ public class Updates extends AppCompatActivity {
 
 //                        TODO
 
-                        if(dataSnapshot.child(items_group[j]).child("second").getChildrenCount() > 1) {
+                        if (dataSnapshot.child(items_group[j]).child("second").getChildrenCount() > 1) {
                             for (DataSnapshot postSnapshot : dataSnapshot.child(items_group[j]).child("second").getChildren()) {
-                                if(fname2 == null){
+                                if (fname2 == null) {
                                     fname2 = postSnapshot.child("name").getValue().toString();
-                                    fscore2= postSnapshot.child("score").getValue().toString();
+                                    fscore2 = postSnapshot.child("score").getValue().toString();
                                     feventName2 = postSnapshot.child("eventName").getValue().toString();
                                     fclassName2 = postSnapshot.child("className").getValue().toString();
                                     fuploader2 = postSnapshot.child("uploader").getValue().toString();
                                     fhouse2 = postSnapshot.child("house").getValue().toString();
-                                    fposition2= postSnapshot.child("position").getValue().toString();
-                                }else{
+                                    fposition2 = postSnapshot.child("position").getValue().toString();
+                                } else {
                                     fname2 += ", " + postSnapshot.child("name").getValue().toString();
                                     fhouse2 += ", " + postSnapshot.child("house").getValue().toString();
                                 }
                             }
 
-                            Details details2 = new Details(fname2,fclassName2,fhouse2,fscore2,feventName2,fposition2,fuploader2);
+                            Details details2 = new Details(fname2, fclassName2, fhouse2, fscore2, feventName2, fposition2, fuploader2);
                             details_array2.add(details2);
 //                            fname2 = null;
-                        }else {
+                        } else {
                             for (DataSnapshot postSnapshot : dataSnapshot.child(items_group[j]).child("second").getChildren()) {
                                 ///gettinng no of first no
-                                Log.d("second data change",".........");
+                                Log.d("second data change", ".........");
 
 //                            for(DataSnapshot subSnapshot : postSnapshot)
                                 secondNo[j] = (int) postSnapshot.getChildrenCount();
@@ -310,7 +378,7 @@ public class Updates extends AppCompatActivity {
                                 //Image image = new Image();
                                 details_array2.add(details2);
 //                            name1.add(details2.getName());
-                                Log.d("name",details2.getName());
+                                Log.d("name", details2.getName());
 //                            eventName1.add(details1.getEventName());
 //                            className1.add(details1.getClassName());
 //                            house1.add(details1.getHouse());
@@ -322,9 +390,7 @@ public class Updates extends AppCompatActivity {
                             }
 
 
-
                             //iterating through all the values in database
-
 
 
                         }
@@ -332,9 +398,9 @@ public class Updates extends AppCompatActivity {
 
 //                        TODO
 
-                        if(dataSnapshot.child(items_group[j]).child("third").getChildrenCount() > 1) {
+                        if (dataSnapshot.child(items_group[j]).child("third").getChildrenCount() > 1) {
                             for (DataSnapshot postSnapshot : dataSnapshot.child(items_group[j]).child("third").getChildren()) {
-                                if(fname3 == null){
+                                if (fname3 == null) {
                                     fname3 = postSnapshot.child("name").getValue().toString();
                                     fscore3 = postSnapshot.child("score").getValue().toString();
                                     feventName3 = postSnapshot.child("eventName").getValue().toString();
@@ -342,19 +408,19 @@ public class Updates extends AppCompatActivity {
                                     fuploader3 = postSnapshot.child("uploader").getValue().toString();
                                     fhouse3 = postSnapshot.child("house").getValue().toString();
                                     fposition3 = postSnapshot.child("position").getValue().toString();
-                                }else{
+                                } else {
                                     fname3 += ", " + postSnapshot.child("name").getValue().toString();
                                     fhouse3 += ", " + postSnapshot.child("house").getValue().toString();
                                 }
                             }
 
-                            Details details3 = new Details(fname3,fclassName3,fhouse3,fscore3,feventName3,fposition3,fuploader3);
+                            Details details3 = new Details(fname3, fclassName3, fhouse3, fscore3, feventName3, fposition3, fuploader3);
                             details_array3.add(details3);
 //                            fname3 = null;
-                        }else {
+                        } else {
                             for (DataSnapshot postSnapshot : dataSnapshot.child(items_group[j]).child("third").getChildren()) {
                                 ///gettinng no of first no
-                                Log.d("third data change",".........");
+                                Log.d("third data change", ".........");
 
 //                            for(DataSnapshot subSnapshot : postSnapshot)
                                 thirdNo[j] = (int) postSnapshot.getChildrenCount();
@@ -379,13 +445,13 @@ public class Updates extends AppCompatActivity {
 
 
 //                            Log.d("fname",fname);
-                                Details details3= postSnapshot.getValue(Details.class);
+                                Details details3 = postSnapshot.getValue(Details.class);
 //                                details1.setName(details1.getName() + "1");
                                 //Log.d("",details.getName());
                                 //Image image = new Image();
                                 details_array3.add(details3);
 //                            name1.add(details1.getName());
-                                Log.d("name",details3.getName());
+                                Log.d("name", details3.getName());
 //                            eventName1.add(details1.getEventName());
 //                            className1.add(details1.getClassName());
 //                            house1.add(details1.getHouse());
@@ -397,31 +463,25 @@ public class Updates extends AppCompatActivity {
                             }
 
 
-
                             //iterating through all the values in database
-
 
 
                         }
 
 
-
-
-
                         //creating adapter
                         //MyAdapter adapter = new MyAdapter(getApplicationContext(), details);
 
-                        mAdapter = new DetailedAdapter(getApplicationContext(),details_array1,details_array2,details_array3,bebas);
+                        mAdapter = new DetailedAdapter(getApplicationContext(), details_array1, details_array2, details_array3, bebas);
 
 //                        mAdapter = new DetailedAdapter(getApplicationContext(),details_array1,details_array2,details_array3);
                         //adding adapter to recyclerview
                         //recyclerView.setAdapter(adapter);
                         recyclerView.setAdapter(mAdapter);
 
-                        if(pDialog.isShowing()){
+                        if (pDialog.isShowing()) {
                             pDialog.dismiss();
                         }
-
 
 
                     }
@@ -436,10 +496,8 @@ public class Updates extends AppCompatActivity {
             public void onCancelled(DatabaseError databaseError) {
 
 
-
             }
         });
-
 
 
     }
