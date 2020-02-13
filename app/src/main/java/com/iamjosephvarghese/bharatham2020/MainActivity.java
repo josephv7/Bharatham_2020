@@ -154,37 +154,34 @@ public class MainActivity extends AppCompatActivity
 
         if (id == R.id.nav_rate) {
 
-//             TODO Uncomment after published
-//            final String appPackageName = getPackageName();
-//            try {
-//                startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse("market://details?id=" + appPackageName)));
-//            } catch (ActivityNotFoundException anfe) {
-//                startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse("https://play.google.com/store/apps/details?id=" + appPackageName)));
-//            }
+
+            final String appPackageName = getPackageName();
+            try {
+                startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse("market://details?id=" + appPackageName)));
+            } catch (ActivityNotFoundException anfe) {
+                startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse("https://play.google.com/store/apps/details?id=" + appPackageName)));
+            }
 
 
         } else if (id == R.id.nav_bug) {
 
 
-//             TODO Uncomment after published
 
-//            final String appPackageName = getPackageName();
-//            try {
-//                startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse("market://details?id=" + appPackageName)));
-//            } catch (ActivityNotFoundException anfe) {
-//                startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse("https://play.google.com/store/apps/details?id=" + appPackageName)));
-//            }
+            final String appPackageName = getPackageName();
+            try {
+                startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse("market://details?id=" + appPackageName)));
+            } catch (ActivityNotFoundException anfe) {
+                startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse("https://play.google.com/store/apps/details?id=" + appPackageName)));
+            }
 
         } else if (id == R.id.nav_share) {
 
-//             TODO Uncomment after published
 
-
-//            Intent sendIntent = new Intent();
-//            sendIntent.setAction(Intent.ACTION_SEND);
-//            sendIntent.putExtra(Intent.EXTRA_TEXT, "Download the bharatham app. https://play.google.com/store/apps/details?id=com.roundmelon.iamjosephvarghese.bharatham_2k18&hl=en_IN");
-//            sendIntent.setType("text/plain");
-//            startActivity(sendIntent);
+            Intent sendIntent = new Intent();
+            sendIntent.setAction(Intent.ACTION_SEND);
+            sendIntent.putExtra(Intent.EXTRA_TEXT, "Download the Bharatham App. https://play.google.com/store/apps/details?id=com.iamjosephvarghese.bharatham2020");
+            sendIntent.setType("text/plain");
+            startActivity(sendIntent);
 
         }
 //        else if (id == R.id.fb) {
