@@ -3,6 +3,7 @@ package com.iamjosephvarghese.bharatham2020;
 import android.app.ProgressDialog;
 import android.graphics.Typeface;
 import android.os.Bundle;
+import android.support.annotation.NonNull;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
@@ -181,11 +182,9 @@ public class Updates extends AppCompatActivity {
         pDialog.show();
 
 
-        final_ref.addValueEventListener(new ValueEventListener() {
+        final_ref.addListenerForSingleValueEvent(new ValueEventListener() {
             @Override
-            public void onDataChange(DataSnapshot dataSnapshot) {
-                //for here/////////////////////////////////////////////////////////
-//                Map<String,String> map = (Map) dataSnapshot.getValue(Map.class);
+            public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
 
                 GenericTypeIndicator<Map<String, String>> genericTypeIndicator = new GenericTypeIndicator<Map<String, String>>() {
                 };
@@ -210,14 +209,52 @@ public class Updates extends AppCompatActivity {
 
                 trigger();
 
-
             }
 
             @Override
-            public void onCancelled(DatabaseError databaseErro) {
+            public void onCancelled(@NonNull DatabaseError databaseError) {
 
             }
         });
+
+
+//        final_ref.addValueEventListener(new ValueEventListener() {
+//            @Override
+//            public void onDataChange(DataSnapshot dataSnapshot) {
+//                //for here/////////////////////////////////////////////////////////
+////                Map<String,String> map = (Map) dataSnapshot.getValue(Map.class);
+//
+//                GenericTypeIndicator<Map<String, String>> genericTypeIndicator = new GenericTypeIndicator<Map<String, String>>() {
+//                };
+//                Map<String, String> map = dataSnapshot.getValue(genericTypeIndicator);
+//
+////                pDialog.setMessage("Updating Scores...");
+////                pDialog.setCancelable(false);
+////                pDialog.show();
+//
+//
+//                Log.d("here", "-----");
+//                Log.d("No. of events", Integer.toString(items_group.length));
+//                for (i = 0; i <= items_group.length - 1; i++) {
+//
+//
+//                    final_status[i] = Integer.parseInt(map.get(items_group[i]));
+////                    final_ref.child(items_group[i]).setValue("0");
+//                    Log.d("Final", Integer.toString(final_status[i]));
+//
+//                }
+//
+//
+//                trigger();
+//
+//
+//            }
+//
+//            @Override
+//            public void onCancelled(DatabaseError databaseErro) {
+//
+//            }
+//        });
 
 
     }

@@ -111,9 +111,8 @@ public class MainActivity extends AppCompatActivity
         video.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-//                TODO handle youtube error
-//                Intent intent = new Intent(MainActivity.this, Youtube.class);
-//                startActivity(intent);
+                startActivity(new Intent(Intent.ACTION_VIEW,
+                        Uri.parse("https://youtu.be/3kTUyc0iMSM")));
             }
         });
 
@@ -213,6 +212,10 @@ public class MainActivity extends AppCompatActivity
                     Uri.parse("https://bharatham2020.in")));
         }
 //        else if (id == R.id.youtube) {
+//
+//        startActivity(new Intent(Intent.ACTION_VIEW,
+//                Uri.parse("https://youtu.be/3kTUyc0iMSM")));
+
 //            String url = "https://www.youtube.com/channel/UCvKw6jTBXaNfxsF3iHA1LMw";
 //            try {
 //                Intent intent = new Intent(Intent.ACTION_VIEW);
